@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# reverses the effect of invocations like
+# split -d --additional-suffix=.chunk -b 45M oracle-xe_10.2.0.1-1.1_i386.deb @reassemble/oracle-xe_10.2.0.1-1.1_i386.deb.
+
+chunks_holder=".reassemble"
+
+reassembler() {
+  for c in "$1/"*.00.chunk ; do
+    chunk_base="$(echo $c | sed 's/\.00\.chunk//')"
+    target_fn="$(echo "$chunk_base" | sed "s!$chunks_holder!.!")"
+    cat "$chunk_base"* > "$target_fn"
+  done
+}
+export -f reassembler
+export chunks_holder
+
+find "$(dirname "${BASH_SOURCE[0]}")" -type d -name "$chunks_holder" -exec bash -c "reassembler {}" \;
