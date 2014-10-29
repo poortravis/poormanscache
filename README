@@ -1,0 +1,100 @@
+** WARNING **
+
+SOME CONTENT IN THIS REPOSITORY IS NOT LICENSED FOR UNLIMITED DISTRIBUTION
+
+IT IS THE USER'S RESPONSIBILITY TO READ AND AGREE TO THE APPROPRIATE LICENSES
+*BEFORE* CHECKING OUT A SPECIFIC BRANCH!!!
+
+*************
+
+
+##### Branch oracle/10.2.0:
+
+  ### apt_cache/*
+
+    apt_cache/ contains verbatim copies of Oracle XE 10.2.0.1 server/client
+    i386 debs as packaged by Oracle.
+    Obtained from https://oss.oracle.com/debian/dists/unstable/ on 2014-10-29
+
+    Not governed by a specific license as far as can be seen, the above url
+    featured on https://help.ubuntu.com/community/Oracle. The signing key
+    deb_signing_key_expired.gpg obtained as per the above instructions.
+
+    The contents sha1 checksums (matching oss.oracle.com as of 2014-10-29):
+
+    f46efcebbe663c20c39426cb40ba0c3fb938231d  apt_cache/.reassemble/oracle-xe_10.2.0.1-1.1_i386.deb.00.chunk
+    31a21a267ca68edf50d8c7c62d05ec0e2429f230  apt_cache/.reassemble/oracle-xe_10.2.0.1-1.1_i386.deb.01.chunk
+    532e646646e13951d9ccbd6e7c2c296ac5bccc3c  apt_cache/.reassemble/oracle-xe_10.2.0.1-1.1_i386.deb.02.chunk
+    db7624c29ac352d4b7a56cb31acee2bbc9d15ea2  apt_cache/.reassemble/oracle-xe_10.2.0.1-1.1_i386.deb.03.chunk
+    e81eb8d594b8365f80b4b054143802fbe243ab3e  apt_cache/.reassemble/oracle-xe_10.2.0.1-1.1_i386.deb.04.chunk
+    e921a680489859e47ccb0e0c937407998a0f9d0c  apt_cache/libaio_0.3.104-1_i386.deb
+    a7467d35ed291857e4b5880d9db8f9f8c82ff645  apt_cache/oracle-xe-client_10.2.0.1-1.2_i386.deb
+    61c879853892febd4f6b27644d5647783f6b8063  apt_cache/deb_signing_key_expired.gpg
+
+    # result of executing the reassembly script:
+    9cfcae3d50c684dce05d38dd0511bbcdd57eb780  apt_cache/oracle-xe_10.2.0.1-1.1_i386.deb
+
+  ### ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/*
+
+    ora_instaclient/ contains an unpacked Oracle InstaClient 10.2.0.5 x86_64
+    Original packages obtained on 2014-10-29 from
+    http://download.oracle.com/otn/linux/instantclient/10205/basiclite-10.2.0.5.0-linux-x64.zip
+    and
+    http://download.oracle.com/otn/linux/instantclient/10205/sdk-10.2.0.5.0-linux-x64.zip
+    both via
+    http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
+
+    The unpacked contents are governed by the following license:
+    http://www.oracle.com/technetwork/licenses/instant-client-lic-152016.html
+
+    The sha1 checksums of the original zips and the unpacked version:
+
+    94efa31e66c85b1f128fab95025ced65772928b4  .../basiclite-10.2.0.5.0-linux-x64.zip
+    b96323201f537233fac93a74e6a24c05731714b1  .../sdk-10.2.0.5.0-linux-x64.zip
+
+    a00a632c27bcda490498463b421297be88562821  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/BASIC_LITE_README
+    4698cbc6e8bb1cd8c34dbfdaaf717f84f66af07e  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/classes12.jar
+    802cbe916faea69c35e5a0a4160db39e86ecff0d  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/genezi
+    819538b74afec2da37a29f5b67ce165d9ba45006  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/libclntsh.so.10.1
+    e1685a1bad3915b82b9f1334974c8fab66336103  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/libnnz10.so
+    3195374c3c5f1408811eec0e5ca3df077d019683  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/libocci.so.10.1
+    798d6b9adc4b1dd13e4878508da10cc74c93b1a5  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/libociicus.so
+    4c6e05c38b7082026f9e9a4cbc6ce4477f45bc74  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/libocijdbc10.so
+    fb153fc8975534e9feb781ed3becc7616705fa93  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/lib/ojdbc14.jar
+    d73bc1613b605a8fe4aad6b469d56aa87a5459e4  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/cdemo81.c
+    b96a7edcdbb0a5e956e50a678a57e2bb78c0a118  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/demo.mk
+    edf0db528d107e3aafcfa5aac10ac87014592861  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/occidemo.sql
+    5237a97106e45fc4b30ffe17f8a1db0ca8f59a20  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/occidemod.sql
+    038ff7940c56deb4ed5a1d427ce1aa7e696553e3  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/occidml.cpp
+    884d240325360038c8fa359d853e6e0803cbc76b  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/occiobj.cpp
+    a32e9413602481bfd65bdf8866d49526951ad0a3  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/demo/occiobj.typ
+    a5290307e8c2df258b9c7631bd20b083c16b66ac  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/nzerror.h
+    7275d23a883161f1d02ba35a9f139d337cddbda8  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/nzt.h
+    6bf522cbfeedde6903ee5d94f322a63daa744838  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/occi.h
+    d320c83a0009e3f48bc8e1643664a02780c0eb82  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/occiAQ.h
+    2cc45fd333fbdce16e65ba5720d4cda503516f83  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/occiCommon.h
+    8871d49b0df1e30f3e61a7210a40fa0d229f4a92  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/occiControl.h
+    8d8e4760de975c363757758bafba4f13e281e3d9  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/occiData.h
+    eac13860aa890813786e10d16d14d680e3c85d25  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/occiObjects.h
+    60d54cff50adc90b8fc3561813c819e624b8fa27  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/oci.h
+    ccdac9fce8707591493d9a0a3e3843de501c5819  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/oci1.h
+    828c1faf956a97b968a87302472c3bbceabdd399  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/oci8dp.h
+    772f532ca85fd7d8f8f9b031024c6a6334bfd01a  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ociap.h
+    13d2f218415b4305a8bf259ddc75ed3176e7baf3  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ociapr.h
+    6edb08aabfa17581d68a8747a6b4d00df125f823  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ocidef.h
+    defa7e8473a4241281e56593fa9975bca68c3a60  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ocidem.h
+    d3110aeebfd10e078593e3547d2cba0f36a5e63e  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ocidfn.h
+    1808398a8b3e02ee061fbb8e1b84669e8b5f4bfd  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ociextp.h
+    8cdf99e015cdd48f04fd0203d280b685a6933e7f  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ocikpr.h
+    df29b37fce1782f42df5fdae97e7572b293c0c6b  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ocixmldb.h
+    c2a7842178ab414714f35c43f407dc4db943fa0e  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/odci.h
+    7db1a8df4a2fa490e0237be856c838c2945603b3  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/oratypes.h
+    2a2094e42acc4a658d5c561543ce47235ed4b0e9  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ori.h
+    2aebe83efe8217d41c0bcc0f99a210ed00956836  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/orid.h
+    e203286701737bfc9f585c38c319e8381adc864e  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/orl.h
+    c0b968389a58322a47c82e0a0ef7f2c7bf03a549  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/oro.h
+    7089133250f72ea5a59739bce4a192ba9f0269b8  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/ort.h
+    5f21995baf4458485d2bd9304f4de9f9542bbd92  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/include/xa.h
+    8c45fc82ea34fb6b7ad17088ae75142264941df1  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/SDK_README
+    15e4bcf5116aa3a00ea72fa9a67c0ddf7cd196a9  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/ott
+    4c5365526d931062b2716c70bb557568d4ef31c0  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/ottclasses.zip
